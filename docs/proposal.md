@@ -12,7 +12,7 @@ In this project, we plan to use Q-Learning algorithm under Reinforcement Learnin
 ### Quantitative: 
 We will evaluate the success by adding the Q-value for each state and action pair. Rewarding scheme for different actions will be used to calculate the final Q-value. For example, the agent will get +0 reward when staying static (including jump in place) and getting +1 reward when moving one step forward towards the end. A Q table will be initialized as 0 for n rows (n=number of states) and m cols (m=number of actions). This table will be used to keep storing and updating Q-values for each pair. To calculate Q-value, we will use the Bellman equation with each action and state pair as input. 
 
-$$ q^{new}\left( s,a\right) =\left( 1-\alpha \right) ~\underset{\text{old value} }{\underbrace{q\left( s,a\right) }\rule[-0.05in]{0in}{0.2in} \rule[-0.05in]{0in}{0.2in}\rule[-0.1in]{0in}{0.3in}}+\alpha \overset{\text{ learned value}}{\overbrace{\left(R_{t+1}+\gamma \max_{a^{^{\prime }}}q\left( s^{\prime },a^{\prime }\right) \right) }} $$
+$$ q^{new}\left( s,a\right) =\left( 1-\alpha \right) ~\underset{\text{old value} }{\underbrace{q\left( s,a\right)}}+\alpha \overset{\text{ learned value}}{\overbrace{\left(R_{t+1}+\gamma \max_{a^{^{\prime }}}q\left( s^{\prime },a^{\prime }\right) \right) }} $$
 
 At the beginning, we will set the epsilon greedy strategy as 1 to ask our agent explore the enviornment with random actions. With more information being learned, the epsilon will be decreased accordingly, which enables our agent to both explore and exploit with knowledge in the environment. 
 
