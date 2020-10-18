@@ -19,6 +19,6 @@ At the beginning, we will set the epsilon greedy strategy as 1 to ask our agent 
 ### Qualitative:
 The ideal situation after being trained is that our agent can reach the end point by learning how to avoid obstables and collecting as much as gold as possible. Our agent should be able to identify obstacles and gold. Our agent will understand under which situation he will lose points and result in game over, and how he can reach the end points with more positive rewards. 
 
-## Apointment
+## Appointment
 
 9:45am - 10:00am, Thursday, October 22, 2020
